@@ -1,0 +1,34 @@
+POST http://localhost:5050/users
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "username": "johndoe",
+  "password":"12345"
+}
+
+###
+GET http://localhost:5050/users
+Content-Type: application/json
+
+
+###
+GET http://localhost:5050/users/64b82039a86b723958bbb1a3
+Content-Type: application/json
+
+
+###
+PUT http://localhost:5050/users/64b82039a86b723958bbb1a3
+Content-Type: application/json
+
+{
+  "first_name": "Elon",
+  "last_name": "Musk"
+}
+
+
+
+###
+DELETE http://localhost:5050/users/64b66a86365d0c3a8543ea34
+Content-Type: application/json
